@@ -5,13 +5,15 @@
 
 mi_lista = [5, 20, 15, 20, 25, 50, 20, 5, 18, 15]
 
-# eliminamos los elementos repetidos creando un set
+# Eliminamos los elementos repetidos creando un set
 mi_set = set(mi_lista)
 mi_lista = list(mi_set)
 
-for i in range(len(mi_lista)):
+
+# Ordenar la lista resultante en orden ascendente.
+""" for i in range(len(mi_lista)):
     for j in range(i + 1, len(mi_lista)):
         if mi_lista[i] > mi_lista[j]:
-            mi_lista[i], mi_lista[j] = mi_lista[j], mi_lista[i]
+            mi_lista[i], mi_lista[j] = mi_lista[j], mi_lista[i] """
 
-print(mi_lista)
+print(mi_set)

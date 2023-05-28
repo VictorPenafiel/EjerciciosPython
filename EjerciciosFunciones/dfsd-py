@@ -1,4 +1,0 @@
-lista = [1,2,3,4]
-def show_list(lista):
-    global lista
-    print(lista)
