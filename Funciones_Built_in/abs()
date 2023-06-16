@@ -1,0 +1,25 @@
+"""
+La función abs devuelve el valor absoluto de un número. El argumento puede ser un número entero o real. Si se trata de un número complejo, se devuelve su módulo.
+"""
+n = 3
+print(abs(n))
+
+n = -3
+print(abs(n))
+
+n = 3.33
+print(abs(n))
+
+n = -3.33
+print(abs(n))
+
+"""
+Si el argumento es un número complejo, se devuelve su módulo:
+"""
+
+n = 3 + 2j
+print(abs(n))
+
+n = 3 - 2j
+print(abs(n))
+
