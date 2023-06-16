@@ -1,0 +1,5 @@
+"""
+La función all devuelve el booleano True si todos los elementos del iterable que se cede como argumento son True (o si el iterable está vacío), y devuelve el booleano False en caso contrario.
+
+"""
+
