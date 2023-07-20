@@ -1,0 +1,22 @@
+""" La función any devuelve el booleano True si alguno de los elementos del iterable que se cede como argumento es True, y devuelve el booleano False en caso contrario (o si el iterable está vacío).
+
+Esta función es equivalente a:
+     """
+def any(iterable):
+
+    for element in iterable:
+
+        if element:
+
+            return True
+
+    return False
+
+""" Ejemplos
+Si, por ejemplo, el iterable es una lista, la función devolverá True solo cuando alguno de los elementos de la lista sea True:
+     """
+m = [False, False, False]
+print (any(m))
+
+m = [True, False, False]
+print (any(m))
