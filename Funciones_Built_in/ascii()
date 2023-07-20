@@ -1,0 +1,9 @@
+""" La función ascii devuelve un string conteniendo una representación imprimible de un objeto.
+ """
+""" Si el objeto es una cadena de texto, la función "escapa" los caracteres no-ascii:
+ """
+print(ascii("Chiño") )
+
+""" El objeto puede ser un iterable como una lista:
+"""
+print(ascii([1,2,"Ñ"]))
