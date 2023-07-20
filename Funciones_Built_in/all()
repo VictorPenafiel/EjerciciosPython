@@ -2,9 +2,41 @@
 La función all devuelve el booleano True si todos los elementos del iterable que se cede como argumento son True (o si el iterable está vacío), y devuelve el booleano False en caso contrario.
 
 Esta función es equivalente a:
-
-
-
 """
+def all(iterable):
 
-# Si, por ejemplo, el iterable es una lista, la función devolverá True solo si todos sus elementos son True:
+    for element in iterable:
+
+        if not element:
+
+            return False
+
+    return True
+
+""" Si, por ejemplo, el iterable es una lista, la función devolverá True solo si todos sus elementos son True:""" 
+
+v =[True, True, True, True, True]
+print(all(v))
+
+""" Si, por el contrario, alguno de sus elementos toma el valor False, la función devolverá False: """
+
+v =[True, False, True, True, True]
+print(all(v))
+
+""" En el caso de que los valores del iterable no sean booleanos, se interpretan de la forma adecuada. Así, los números distintos a cero se interpretan como True, y los ceros como False: """
+
+v = [1,2,3]
+print(all(v))
+
+v = [1,0,3]
+print(all(v))
+
+""" Si se trata de números complejos, solo el número 0 + 0j es interpretado como False: """
+
+v = [1+2j, -3+4j, 0-0j]
+print(all(v))
+
+""" si una lista está vacía, la función devuelve True: """
+
+v = []
+print(all(v))
